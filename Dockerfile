@@ -12,7 +12,7 @@ RUN apt-get install -y libfreetype6-dev libpng-dev libncurses5-dev vim git-core 
 RUN wget http://pypi.python.org/packages/source/b/biopython/biopython-1.65.tar.gz
 RUN tar xvf biopython-1.65.tar.gz
 RUN cd biopython-1.65/
-RUN apt-get install ipython
+RUN apt-get install -y ipython
 RUN python setup.py install
 CMD ["/bin/bash"]
 

@@ -10,7 +10,7 @@ RUN apt-get install -y zip
 RUN apt-get install -y python-software-properties python-dev python-pip
 RUN apt-get install -y libfreetype6-dev libpng-dev libncurses5-dev vim git-core build-essential curl unzip wget
 RUN wget http://pypi.python.org/packages/source/b/biopython/biopython-1.65.tar.gz
-RUN tar xvf biopython-1.65.tar.gz && cd biopython-1.65/ && python setup.py install
+RUN tar xvf biopython-1.65.tar.gz && cd biopython-1.65/ 
 RUN apt-get install -y ipython
 CMD ["/bin/bash"]
 
